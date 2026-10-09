@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CINEVERSE | Film Production</title>
+<meta name="description" content="Discover films, stories and filmmaking at Cineverse.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,sans-serif;
+  background:#0b0b0b;color:#fff;line-height:1.6
+}
+header{
+  background:#111;display:flex;justify-content:space-between;
+  align-items:center;padding:18px 7%;position:sticky;top:0;z-index:10;
+  border-bottom:1px solid #292929
+}
+.logo{font-size:23px;font-weight:900;letter-spacing:2px}
+.logo span{color:#ed1c24}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:#ddd;text-decoration:none;font-size:14px}
+nav a:hover{color:#ff333b}
+.hero{
+  min-height:540px;padding:100px 7%;
+  display:flex;align-items:center;
+  background:linear-gradient(90deg,#090909 5%,#090909dd 50%,#09090966),
+  linear-gradient(0deg,#0b0b0b,transparent 40%),
+  url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=85') center/cover
+}
+.hero-content{max-width:650px}
+.tag{color:#ff333b;font-weight:bold;letter-spacing:3px;font-size:12px}
+h1{font-size:clamp(38px,8vw,70px);line-height:1.1;margin:18px 0}
+h1 span{color:#ed1c24}
+.hero p{color:#ccc;max-width:500px;margin-bottom:25px}
+.btn{
+  display:inline-block;background:#e51b23;color:white;
+  padding:13px 22px;text-decoration:none;border-radius:4px;
+  font-weight:bold;margin:5px 7px 5px 0
+}
+.btn.outline{background:transparent;border:1px solid #888}
+section{padding:65px 7%}
+.section-title{font-size:30px;margin-bottom:8px}
+.subtitle{color:#aaa;margin-bottom:28px}
+.red-line{height:3px;width:55px;background:#ed1c24;margin:12px 0 22px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#171717;border:1px solid #292929;border-radius:8px;overflow:hidden}
+.poster{height:210px;display:flex;align-items:center;justify-content:center;
+font-size:54px;background:linear-gradient(135deg,#351015,#111 65%)}
+.poster.two{background:linear-gradient(135deg,#252b42,#101010)}
+.poster.three{background:linear-gradient(135deg,#48351c,#111)}
+.card-body{padding:20px}
+.card h3{margin-bottom:8px}
+.card p{font-size:14px;color:#aaa}
+.pill{display:inline-block;color:#ff6268;font-size:11px;
+letter-spacing:1px;margin-bottom:8px;font-weight:bold}
+.about{background:#121212}
+.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;align-items:center}
+.about p{color:#bbb;margin-bottom:15px}
+.stat{border-left:3px solid #ed1c24;padding:12px 18px;background:#1b1b1b;margin-bottom:12px}
+.stat strong{font-size:22px}
+.stat p{margin:0;font-size:13px}
+.services{background:#0e0e0e}
+.service{padding:22px;background:#181818;border-radius:6px;border-bottom:2px solid #ed1c24}
+.service .symbol{font-size:30px;margin-bottom:10px}
+.service p{font-size:14px;color:#aaa;margin-top:7px}
+.contact{text-align:center;background:linear-gradient(135deg,#24090b,#101010)}
+.contact p{color:#ccc;margin:12px 0 22px}
+footer{text-align:center;padding:25px 7%;background:#080808;color:#888;font-size:13px}
+footer span{color:#ed1c24}
+@media(max-width:600px){
+ header{padding:14px 5%;align-items:flex-start;gap:12px;flex-direction:column}
+ nav{gap:14px}
+ nav a{font-size:13px}
+ .hero{padding:75px 6%;min-height:480px}
+ section{padding:48px 6%}
+ .poster{height:180px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">CINE<span>VERSE</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#films">Films</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="tag">IMAGINE. CREATE. INSPIRE.</div>
+    <h1>EVERY FRAME<br>HAS A <span>STORY.</span></h1>
+    <p>Welcome to Cineverse, a home for cinematic storytelling, filmmaking, creative ideas and original film projects.</p>
+    <a class="btn" href="#films">Explore Films ▶</a>
+    <a class="btn outline" href="#about">Discover Us</a>
+  </div>
+</section>
+
+<section id="films">
+  <div class="tag">OUR CREATIVE WORLD</div>
+  <h2 class="section-title">Featured Projects</h2>
+  <div class="red-line"></div>
+  <p class="subtitle">Stories in development. New cinematic experiences coming soon.</p>
+
+  <div class="cards">
+    <article class="card">
+      <div class="poster">🎬</div>
+      <div class="card-body">
+        <span class="pill">ACTION / DRAMA</span>
+        <h3>Project One</h3>
+        <p>A powerful original story currently in development.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster two">🎥</div>
+      <div class="card-body">
+        <span class="pill">SHORT FILM</span>
+        <h3>Project Two</h3>
+        <p>A creative short-film concept built around human emotions.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="poster three">🎞️</div>
+      <div class="card-body">
+        <span class="pill">BEHIND THE SCENES</span>
+        <h3>Making Cinema</h3>
+        <p>Discover camera work, direction and the filmmaking process.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-grid">
+    <div>
+      <div class="tag">WHO WE ARE</div>
+      <h2 class="section-title">Stories That Stay With You</h2>
+      <div class="red-line"></div>
+      <p>Cineverse is a creative film platform dedicated to storytelling, visual art and the magic of cinema.</p>
+      <p>From the first script to the final edit, every stage brings an idea closer to the big screen.</p>
+      <a href="#contact" class="btn">Connect With Us</a>
+    </div>
+    <div>
+      <div class="stat"><strong>01</strong><p>Creative storytelling</p></div>
+      <div class="stat"><strong>02</strong><p>Visual filmmaking</p></div>
+      <div class="stat"><strong>03</strong><p>Original film ideas</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="tag">WHAT WE LOVE</div>
+  <h2 class="section-title">Our Film World</h2>
+  <div class="red-line"></div>
+  <div class="cards">
+    <div class="service">
+      <div class="symbol">✍️</div>
+      <h3>Story & Screenplay</h3>
+      <p>Ideas, characters, dialogue and screenwriting.</p>
+    </div>
+    <div class="service">
+      <div class="symbol">📹</div>
+      <h3>Cinematography</h3>
+      <p>Camera angles, lighting, composition and visual storytelling.</p>
+    </div>
+    <div class="service">
+      <div class="symbol">🎬</div>
+      <h3>Film Production</h3>
+      <p>Planning, shooting and bringing film projects to life.</p>
+    </div>
+    <div class="service">
+      <div class="symbol">💻</div>
+      <h3>Editing</h3>
+      <p>Editing, sound, colour and final film presentation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="tag">LET'S CREATE SOMETHING</div>
+  <h2 class="section-title">Have a Story to Tell?</h2>
+  <p>Get in touch to discuss a film idea or creative collaboration.</p>
+  <!-- Replace the email below with your own email address -->
+  <a class="btn" href="mailto:yourname@example.com">Contact Us ✉</a>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 <span>CINEVERSE</span> · Made for the love of cinema.</p>
+</footer>
+
+</body>
+</html>
